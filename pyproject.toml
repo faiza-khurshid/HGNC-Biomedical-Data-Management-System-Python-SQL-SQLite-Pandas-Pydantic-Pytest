@@ -1,0 +1,25 @@
+[project]
+name = "hgnc"
+version = "0.1.0"
+description = "Download and filter HGNC database"
+readme = "README.md"
+authors = [
+    { name = "Jenna Jeffway", email = "s53jjeff@uni-bonn.de" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=3.0.1",
+    "pydantic>=2.12.5",
+    "requests>=2.32.5",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+]
